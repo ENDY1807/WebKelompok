@@ -127,6 +127,7 @@ body {
     width: 98%;
     color: white;
     text-align: center;
+    margin-top: auto;
 }
 
 @media screen and (max-width: 900px) {
