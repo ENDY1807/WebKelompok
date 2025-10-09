@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpustakaan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="projek.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>PERPUSTAKAAN</h1>
+    </div>
+
+    <div class="main">
+      <div class="left">
+        <h3 align="center">Menu</h3>
+        <ul>
+          <li><a href="login.html"><i class="fa-solid fa-user"></i> Login</a></li>
+          <hr>
+          <li><a href="index2.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <hr>
+          <li><a href="Buku.html"><i class="fa-solid fa-book"></i> Buku</a></li>
+          <hr>
+        </ul>
+      </div>
+
+      <div class="middle">
+        <h2>Buku</h2>
+        <iframe id="viewer" src="" frameborder="0"></iframe>
+        <p id="msg">Klik salah satu buku di kanan untuk melihat isinya.</p>
+      </div>
+
+      <div class="right">
+        <h3 align="center">Buku Terpopuler</h3>
+        <ul>
+          <li><a href="#" onclick="loadBook('WebDesign.pdf')">Web Design</a></li>
+          <hr>
+          <li><a href="#" onclick="loadBook('Pemograman.pdf')">Pemrograman</a></li>
+          <hr>
+          <li><a href="#" onclick="loadBook('Database.pdf')">Database</a></li>
+          <hr>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p align="center">&copy; 2025 By Endy & Zaky</p>
+    </div>
+  </div>
+
+  <script>
+    function loadBook(url) {
+      var iframe = document.getElementById('viewer');
+      var msg = document.getElementById('msg');
+      iframe.src = url;
+      iframe.style.display = 'block';
+      msg.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
