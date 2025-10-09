@@ -121,6 +121,8 @@ body {
     text-align: center;
     padding: 10px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
 }
 
 @media screen and (max-width: 900px) {
